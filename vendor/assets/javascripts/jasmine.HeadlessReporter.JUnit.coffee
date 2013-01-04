@@ -2,6 +2,7 @@
 #
 class jasmine.HeadlessReporter.JUnit extends jasmine.JUnitXmlReporter
   constructor: (@outputTarget = null) ->
+    @consolidate = true
 
   writeFile: (filename, text) =>
     JHW.print(@outputTarget, text)
